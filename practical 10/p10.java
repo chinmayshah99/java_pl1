@@ -7,7 +7,7 @@ height="120"></applet>*/
 
 public class p10 extends Frame implements ActionListener 
 {
-	 TextField t1,t2,resultNum;
+	TextField t1,t2,resultNum;
 	p10()
 	{
 		Frame f=new Frame(); 
@@ -15,7 +15,7 @@ public class p10 extends Frame implements ActionListener
 		Button b1=new Button("Add"); 
 		Button b2=new Button("Subtract"); 
 		Button b3=new Button("Multiply"); 
-                Button b4=new Button("Divide");  
+        Button b4=new Button("Divide");  
 	
 		
   		t1=new TextField(15); 		
@@ -23,7 +23,7 @@ public class p10 extends Frame implements ActionListener
    		t2=new TextField(15); 
   	
 
-          	resultNum = new TextField(15);
+        resultNum = new TextField(15);
 		
   
 		f.setSize(300,300);   	
@@ -49,9 +49,9 @@ public class p10 extends Frame implements ActionListener
 			 double yo;
 			 String str=e.getActionCommand();
 			 if(str.equals("Add"))
-                	 {
+             {
 				yo=fn+sn;
-      			 	resultNum.setText("  " + (yo));
+      			resultNum.setText("  " + (yo));
 			 }
 			 if(str.equals("Subtract"))
                 	 {
